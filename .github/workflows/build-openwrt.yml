@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/ACwifidude/openwrt
-  REPO_BRANCH: openwrt-21.02-nss-qsdk10.0
+  REPO_BRANCH: kernel5.4-nss-qsdk10.0
   BRANCH: R7800-with-NSS
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
