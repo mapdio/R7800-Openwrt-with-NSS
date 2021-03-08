@@ -34,12 +34,12 @@ sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
 
 # 添加UPX UCL工具包
-# cp -r lede/tools/upx tools
-# cp -r lede/tools/ucl tools
+cp -r lede/tools/upx tools
+cp -r lede/tools/ucl tools
 
 # 修改makefile
-# sed  -i '/^# builddir dependencies/i\tools-y += ucl upx' ./tools/Makefile
-# sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' ./tools/Makefile
+sed  -i '/^# builddir dependencies/i\tools-y += ucl upx' ./tools/Makefile
+sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' ./tools/Makefile
 
 
 # 删除重复插件
