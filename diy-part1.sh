@@ -28,18 +28,18 @@ cp -r lede/package/lean package/
 # 添加 ssr plus 和passwall 支持源
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
-sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
+# sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
 
 
 
 # 添加UPX UCL工具包
-cp -r lede/tools/upx tools
-cp -r lede/tools/ucl tools
+# cp -r lede/tools/upx tools
+# cp -r lede/tools/ucl tools
 
 # 修改makefile
-sed  -i '/^# builddir dependencies/i\tools-y += ucl upx' ./tools/Makefile
-sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' ./tools/Makefile
+# sed  -i '/^# builddir dependencies/i\tools-y += ucl upx' ./tools/Makefile
+# sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/compile' ./tools/Makefile
 
 
 # 删除重复插件
