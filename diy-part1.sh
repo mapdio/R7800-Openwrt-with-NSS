@@ -22,7 +22,7 @@ rm -rf bin
 # 并入 lean插件包feeds和firewall
 git clone https://github.com/coolsnowwolf/lede
 cp -r lede/package/lean package/
-\cp lede/feeds.conf.default feeds.conf.default
+# \cp lede/feeds.conf.default feeds.conf.default
 
 
 # 添加 ssr plus 和passwall 支持源
