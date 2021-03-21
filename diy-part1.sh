@@ -20,22 +20,32 @@
 rm -rf bin
 
 # 并入 lean插件包feeds和firewall
-git clone https://github.com/coolsnowwolf/lede
-cp -r lede/package/lean package/
+# git clone https://github.com/coolsnowwolf/lede
+# cp -r lede/package/lean package/
 # \cp lede/feeds.conf.default feeds.conf.default
 
 
 # 添加 ssr plus 和passwall 支持源
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-flowoffload package/luci-app-flowoffload
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/default-settings package/default-settings
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/UnblockNeteaseMusic package/UnblockNeteaseMusic
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/UnblockNeteaseMusicGo package/UnblockNeteaseMusicGo
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-accesscontrol package/luci-app-accesscontrol
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-autoreboot package/luci-app-autoreboot
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-arpbind package/luci-app-arpbind
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-unblockmusic package/luci-app-unblockmusic
+
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
 
 # 添加UPX UCL工具包
-cp -r lede/tools/upx tools
-cp -r lede/tools/ucl tools
-# mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile
-# mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
+# cp -r lede/tools/upx tools
+# cp -r lede/tools/ucl tools
+mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile
+mkdir -p tools/upx && wget -P tools/upx https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/upx/Makefile
 
 # 修改makefile
 sed  -i '/^# builddir dependencies/i\tools-y += ucl upx' ./tools/Makefile
@@ -45,18 +55,20 @@ sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/comp
 
 
 # 删除重复插件
-rm -rf package/lean/ipt2socks
-rm -rf package/lean/dns2socks
-rm -rf package/lean/pdnsd-alt
-rm -rf package/lean/shadowsocksr-libev
-rm -rf package/lean/simple-obfs
-rm -rf package/lean/v2ray-plugin
-rm -rf package/lean/v2ray
-rm -rf package/lean/microsocks
+# rm -rf package/lean/ipt2socks
+# rm -rf package/lean/dns2socks
+# rm -rf package/lean/pdnsd-alt
+# rm -rf package/lean/shadowsocksr-libev
+# rm -rf package/lean/simple-obfs
+# rm -rf package/lean/v2ray-plugin
+# rm -rf package/lean/v2ray
+# rm -rf package/lean/microsocks
+# rm -rf package/lean/aria2
+# rm -rf package/lean/minidlna
 
 
 
 # 删除lede文件夹
-rm -rf lede
+# rm -rf lede
 
 
