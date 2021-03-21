@@ -28,15 +28,15 @@ rm -rf bin
 # 添加 ssr plus 和passwall 支持源
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-flowoffload package/luci-app-flowoffload
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/default-settings package/default-settings
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/UnblockNeteaseMusic package/UnblockNeteaseMusic
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/UnblockNeteaseMusicGo package/UnblockNeteaseMusicGo
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-accesscontrol package/luci-app-accesscontrol
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-autoreboot package/luci-app-autoreboot
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-arpbind package/luci-app-arpbind
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-unblockmusic package/luci-app-unblockmusic
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/luci-app-flowoffload
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/default-settings
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic package/UnblockNeteaseMusic
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/UnblockNeteaseMusicGo
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-accesscontrol package/luci-app-accesscontrol
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/luci-app-autoreboot
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-unblockmusic package/luci-app-unblockmusic
 
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
