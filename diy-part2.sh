@@ -21,7 +21,7 @@ mv package/luci-app-arpbind/po/zh-cn package/luci-app-arpbind/po/zh-Hans
 mv package/luci-app-accesscontrol/po/zh-cn package/luci-app-accesscontrol/po/zh-Hans
 
 
-cat >> luci/modules/luci-base/po/zh-cn/base.po <<EOF
+cat >> luci/modules/luci-base/po/zh-Hans/base.po <<EOF
 msgid "NAS"
 msgstr "网络存储"
 EOF
