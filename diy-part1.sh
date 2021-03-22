@@ -37,30 +37,23 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMus
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/UnblockNeteaseMusicGo
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/openwrt-fullconenat package/openwrt-fullconenat
 
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-accesscontrol package/feeds/luci/luci-app-accesscontrol
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/feeds/luci/luci-app-arpbind
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/feeds/luci/luci-app-autoreboot
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq package/feeds/luci/luci-app-cpufreq
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/feeds/luci/luci-app-flowoffload
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-unblockmusic package/feeds/luci/luci-app-unblockmusic
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-accesscontrol package/luci-app-accesscontrol
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/luci-app-autoreboot
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/luci-app-flowoffload
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-unblockmusic package/luci-app-unblockmusic
 
-# mv package/feeds/luci/luci-app-cpufreq/po/zh-cn  package/feeds/luci/luci-app-cpufreq/po/zh_Hans
-# mv package/feeds/luci/luci-app-unblockmusic/po/zh-cn package/feeds/luci/luci-app-unblockmusic/po/zh_Hans
-# mv package/feeds/luci/luci-app-flowoffload/po/zh-cn package/feeds/luci/luci-app-flowoffload/po/zh_Hans
-# # mv package/feeds/luci/luci-app-autoreboot/po/zh-cn package/feeds/luci/luci-app-autoreboot/po/zh_Hans
-# mv package/feeds/luci/luci-app-arpbind/po/zh-cn package/feeds/luci/luci-app-arpbind/po/zh_Hans
-# mv package/feeds/luci/luci-app-accesscontrol/po/zh-cn package/feeds/luci/luci-app-accesscontrol/po/zh_Hans
+mv package/luci-app-cpufreq/po/zh-cn  package/luci-app-cpufreq/po/zh_Hans
+mv package/luci-app-unblockmusic/po/zh-cn package/luci-app-unblockmusic/po/zh_Hans
+mv package/luci-app-flowoffload/po/zh-cn package/luci-app-flowoffload/po/zh_Hans
+mv package/luci-app-autoreboot/po/zh-cn package/luci-app-autoreboot/po/zh_Hans
+mv package/luci-app-arpbind/po/zh-cn package/luci-app-arpbind/po/zh_Hans
+mv package/luci-app-accesscontrol/po/zh-cn package/luci-app-accesscontrol/po/zh_Hans
 
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
-sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-cpufreq/Makefile
-sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-unblockmusic/Makefile
-sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-flowoffload/Makefile
-sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-autoreboot/Makefile
-sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-arpbind/Makefile
-sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-accesscontrol/Makefile
 
-mkdir -p feeds/luci && wget -O feeds/luci/luci2.mk https://raw.githubusercontent.com/coolsnowwolf/luci/master/luci.mk
 
 # 添加UPX UCL工具包
 # cp -r lede/tools/upx tools
