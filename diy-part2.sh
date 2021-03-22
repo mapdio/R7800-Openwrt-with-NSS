@@ -22,6 +22,7 @@ mv package/luci-app-accesscontrol/po/zh-cn package/luci-app-accesscontrol/po/zh_
 
 
 cat >> feeds/luci/modules/luci-base/po/zh_Hans/base.po <<EOF
+
 #: modules/luci-base/root/usr/share/luci/menu.d/luci-base.json:45
 msgid "NAS"
 msgstr "网络存储"
