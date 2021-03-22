@@ -23,16 +23,17 @@ rm -rf bin
 # git clone https://github.com/coolsnowwolf/lede
 # cp -r lede/package/lean package/
 # \cp lede/feeds.conf.default feeds.conf.default
-
+git clone -b master --single-branch https://github.com/LGA1150/openwrt-fullconenat package/fullconenat
 
 # 添加 ssr plus 和passwall 支持源
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
+
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/default-settings
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic package/UnblockNeteaseMusic
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/UnblockNeteaseMusicGo
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/openwrt-fullconenat package/openwrt-fullconenat
+# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/openwrt-fullconenat package/openwrt-fullconenat
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-accesscontrol package/feeds/luci/luci-app-accesscontrol
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/feeds/luci/luci-app-arpbind
