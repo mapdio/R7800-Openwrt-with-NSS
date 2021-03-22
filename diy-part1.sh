@@ -23,7 +23,9 @@ rm -rf bin
 # git clone https://github.com/coolsnowwolf/lede
 # cp -r lede/package/lean package/
 # \cp lede/feeds.conf.default feeds.conf.default
+
 git clone -b master --single-branch https://github.com/LGA1150/openwrt-fullconenat package/fullconenat
+wget -P target/linux/generic/hack-5.4 https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/generic/hack-5.4/952-net-conntrack-events-support-multiple-registrant.patch
 
 # 添加 ssr plus 和passwall 支持源
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
