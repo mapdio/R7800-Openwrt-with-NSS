@@ -60,7 +60,7 @@ sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-autoreboot/Makefile
 sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-arpbind/Makefile
 sed -i 's/luci.mk/luci2.mk/' package/feeds/luci/luci-app-accesscontrol/Makefile
 
-wget -O feeds/luci/luci2.mk https://raw.githubusercontent.com/coolsnowwolf/luci/master/luci.mk
+mkdir -p feeds/luci && wget -O feeds/luci/luci2.mk https://raw.githubusercontent.com/coolsnowwolf/luci/master/luci.mk
 
 # 添加UPX UCL工具包
 # cp -r lede/tools/upx tools
