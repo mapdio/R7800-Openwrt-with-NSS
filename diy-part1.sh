@@ -44,12 +44,12 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/feeds/luci/luci-app-flowoffload
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-unblockmusic package/feeds/luci/luci-app-unblockmusic
 
-mv package/feeds/luci/luci-app-cpufreq/po/zh-cn  package/luci-app-cpufreq/po/zh_Hans
-mv package/feeds/luci/luci-app-unblockmusic/po/zh-cn package/luci-app-unblockmusic/po/zh_Hans
-mv package/feeds/luci/luci-app-flowoffload/po/zh-cn package/luci-app-flowoffload/po/zh_Hans
-mv package/feeds/luci/luci-app-autoreboot/po/zh-cn package/luci-app-autoreboot/po/zh_Hans
-mv package/feeds/luci/luci-app-arpbind/po/zh-cn package/luci-app-arpbind/po/zh_Hans
-mv package/feeds/luci/luci-app-accesscontrol/po/zh-cn package/luci-app-accesscontrol/po/zh_Hans
+mv package/feeds/luci/luci-app-cpufreq/po/zh-cn  package/feeds/luci/luci-app-cpufreq/po/zh_Hans
+mv package/feeds/luci/luci-app-unblockmusic/po/zh-cn package/feeds/luci/luci-app-unblockmusic/po/zh_Hans
+mv package/feeds/luci/luci-app-flowoffload/po/zh-cn package/feeds/luci/luci-app-flowoffload/po/zh_Hans
+mv package/feeds/luci/luci-app-autoreboot/po/zh-cn package/feeds/luci/luci-app-autoreboot/po/zh_Hans
+mv package/feeds/luci/luci-app-arpbind/po/zh-cn package/feeds/luci/luci-app-arpbind/po/zh_Hans
+mv package/feeds/luci/luci-app-accesscontrol/po/zh-cn package/feeds/luci/luci-app-accesscontrol/po/zh_Hans
 
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
