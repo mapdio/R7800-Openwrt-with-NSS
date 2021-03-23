@@ -86,6 +86,8 @@ sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/comp
 # rm -rf lede
 
  cd package/lean
+ git config --global user.email "r7800@openwrt.com"
+ git config --global user.name "r7800"
  git init
  git add .
  git commit -m "添加lean 插件包 "
