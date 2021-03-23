@@ -56,7 +56,6 @@ sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/aria2.lua
 # sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/xunlei.lua
 # sed -i 's/services/nas/g'  /usr/lib/lua/luci/view/minidlna_status.htm
 
-sed -i 's/services/nas/g' /usr/share/luci/menu.d/luci-app-smartdns.json
 sed -i 's/services/nas/g' /usr/share/luci/menu.d/luci-app-minidlna.json
 sed -i 's/services/nas/g' /usr/share/luci/menu.d/luci-app-samba4.json
 sed -i '/\"admin\/network\"/i\\n\"admin\/nas": {"title": "NAS","order": 40,"action": {"type": "firstchild","recurse": true}},\n' /usr/share/luci/menu.d/luci-base.json
