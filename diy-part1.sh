@@ -32,24 +32,24 @@ sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.co
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
 
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/default-settings
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic package/UnblockNeteaseMusic
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/UnblockNeteaseMusicGo
-# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/openwrt-fullconenat package/openwrt-fullconenat
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic package/lean/UnblockNeteaseMusic
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/lean/UnblockNeteaseMusicGo
+# svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/openwrt-fullconenat package/lean/openwrt-fullconenat
 
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-accesscontrol package/luci-app-accesscontrol
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/luci-app-autoreboot
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/luci-app-flowoffload
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-unblockmusic package/luci-app-unblockmusic
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-accesscontrol package/lean/luci-app-accesscontrol
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/lean/luci-app-arpbind
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/lean/luci-app-autoreboot
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-flowoffload package/lean/luci-app-flowoffload
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-unblockmusic package/lean/luci-app-unblockmusic
 
-mv package/luci-app-cpufreq/po/zh-cn  package/luci-app-cpufreq/po/zh_Hans
-mv package/luci-app-unblockmusic/po/zh-cn package/luci-app-unblockmusic/po/zh_Hans
-mv package/luci-app-flowoffload/po/zh-cn package/luci-app-flowoffload/po/zh_Hans
-mv package/luci-app-autoreboot/po/zh-cn package/luci-app-autoreboot/po/zh_Hans
-mv package/luci-app-arpbind/po/zh-cn package/luci-app-arpbind/po/zh_Hans
-mv package/luci-app-accesscontrol/po/zh-cn package/luci-app-accesscontrol/po/zh_Hans
+mv package/lean/luci-app-cpufreq/po/zh-cn  package/lean/luci-app-cpufreq/po/zh_Hans
+mv package/lean/luci-app-unblockmusic/po/zh-cn package/lean/luci-app-unblockmusic/po/zh_Hans
+mv package/lean/luci-app-flowoffload/po/zh-cn package/lean/luci-app-flowoffload/po/zh_Hans
+mv package/lean/luci-app-autoreboot/po/zh-cn package/lean/luci-app-autoreboot/po/zh_Hans
+mv package/lean/luci-app-arpbind/po/zh-cn package/lean/luci-app-arpbind/po/zh_Hans
+mv package/lean/luci-app-accesscontrol/po/zh-cn package/lean/luci-app-accesscontrol/po/zh_Hans
 
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
@@ -85,4 +85,7 @@ sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/comp
 # 删除lede文件夹
 # rm -rf lede
 
-
+ cd package/lean
+ git init
+ git add .
+ git commit -m "添加lean 插件包 "
