@@ -18,6 +18,8 @@
 
 # 移除ACwifidude自带bin目录
 rm -rf bin
+# 删除自带cpufreq配置
+rm -f target/linux/ipq806x/base-files/etc/init.d/cpufreq
 
 # 并入 lean插件包feeds和firewall
 # git clone https://github.com/coolsnowwolf/lede
