@@ -1,0 +1,147 @@
+Package: dns2socks
+Version: 2.1-2
+Depends: libc, libpthread
+Source: feeds/small/dns2socks
+SourceName: dns2socks
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1624960678
+Maintainer: ghostmaker
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 10681
+Filename: dns2socks_2.1-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 11445
+SHA256sum: ad05219902b8a6ea1206618dd8fc98e786dda177b253e44d8798eeb608e23b48
+Description:  This is a utility to resolve DNS requests via a SOCKS5 tunnel and caches the answers.
+
+Package: ipt2socks
+Version: 1.1.3-2
+Depends: libc
+Source: feeds/small/ipt2socks
+SourceName: ipt2socks
+Section: net
+SourceDateEpoch: 1624960678
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 31111
+Filename: ipt2socks_1.1.3-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 31856
+SHA256sum: a9e10cd2518337e9bdd9d8958204cc6ebdb7122bc76655e2fdab0e721af03bc0
+Description:  Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+
+Package: pdnsd-alt
+Version: 1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d
+Depends: libc, libpthread
+Source: feeds/small/pdnsd-alt
+SourceName: pdnsd-alt
+Section: net
+SourceDateEpoch: 1624960678
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 88422
+Filename: pdnsd-alt_1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d_arm_cortex-a15_neon-vfpv4.ipk
+Size: 89484
+SHA256sum: e887ced5e8156beb2d9cb6cb2141af04d1ec849cc14cb269a7275cf93d6b2ca5
+Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
+ contents are written to hard disk on exit) that is designed to cope with
+ unreachable or down DNS servers (for example in dial-in networking).
+ 
+ pdnsd can be used with applications that do dns lookups, eg on startup, and
+ can't be configured to change that behaviour, to prevent the often
+ minute-long hangs (or even crashes) that result from stalled dns queries.
+
+Package: shadowsocksr-libev-ssr-check
+Version: 2.5.6-9
+Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Source: feeds/small/shadowsocksr-libev
+SourceName: shadowsocksr-libev-ssr-check
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1624960678
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2231
+Filename: shadowsocksr-libev-ssr-check_2.5.6-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3015
+SHA256sum: b7452ba0e723c91af53a0e8044bc6f2b6d86053264c72e9f1be428ac53aaef16
+Description:  shadowsocksr-libev ssr-check
+
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-9
+Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Source: feeds/small/shadowsocksr-libev
+SourceName: shadowsocksr-libev-ssr-local
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1624960678
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 58749
+Filename: shadowsocksr-libev-ssr-local_2.5.6-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 59589
+SHA256sum: 68062b8bb5e859dd947b859a67aa44b601787384ca5196201fa5c32acbd622e2
+Description:  shadowsocksr-libev ssr-local
+
+Package: shadowsocksr-libev-ssr-redir
+Version: 2.5.6-9
+Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Source: feeds/small/shadowsocksr-libev
+SourceName: shadowsocksr-libev-ssr-redir
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1624960678
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 53139
+Filename: shadowsocksr-libev-ssr-redir_2.5.6-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 53907
+SHA256sum: f0b56177ff1c0beba5402a6efa399c03679724f8dbb16d1b034d7785cd5af659
+Description:  shadowsocksr-libev ssr-redir
+
+Package: shadowsocksr-libev-ssr-server
+Version: 2.5.6-9
+Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Source: feeds/small/shadowsocksr-libev
+SourceName: shadowsocksr-libev-ssr-server
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1624960678
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 62362
+Filename: shadowsocksr-libev-ssr-server_2.5.6-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 63165
+SHA256sum: 87235d6f8fe385979f79a9b2bc3e01da167aad4286bf5604c2bc1a7390eb6bb0
+Description:  shadowsocksr-libev ssr-server
+
+Package: simple-obfs
+Version: 0.0.5-4
+Depends: libc, libpthread, libev
+Source: feeds/small/simple-obfs
+SourceName: simple-obfs
+License: GPL-3.0-or-later
+LicenseFiles: COPYING LICENSE
+Section: net
+SourceDateEpoch: 1624960678
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 27105
+Filename: simple-obfs_0.0.5-4_arm_cortex-a15_neon-vfpv4.ipk
+Size: 27914
+SHA256sum: 2ab470bcc266dfacfe7dd44e9e31c826793fcae6186095789da2a6314d1c27d4
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: trojan
+Version: 1.16.0-2
+Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
+Source: feeds/small/trojan
+SourceName: trojan
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1624960678
+Maintainer: GreaterFire
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 266202
+Filename: trojan_1.16.0-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 266526
+SHA256sum: c4650a8ff02f914a3107f73ce3c0f961238b7400b1b6fb4c39bdedc4aaa030c3
+Description:  An unidentifiable mechanism that helps you bypass GFW
+

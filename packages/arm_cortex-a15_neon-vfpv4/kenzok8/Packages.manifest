@@ -1,0 +1,76 @@
+Package: luci-app-ssr-plus
+Version: 184
+Depends: libc, coreutils, coreutils-base64, dns2socks, dnsmasq-full, ipset, ip-full, iptables-mod-tproxy, lua, libuci-lua, microsocks, pdnsd-alt, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, libustream-openssl20201210, redsocks2, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, trojan, ipt2socks, curl, xray-core
+Source: feeds/kenzok8/luci-app-ssr-plus
+SourceName: luci-app-ssr-plus
+Section: luci
+SourceDateEpoch: 1626236476
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 193194
+Filename: luci-app-ssr-plus_184_all.ipk
+Size: 193462
+SHA256sum: c866341a7dd1329caa608b962bac7d844253c655f6da364d63f54973937038bf
+Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
+
+Package: luci-i18n-ssr-plus-zh-cn
+Version: git-21.195.15676-c119ac4
+Depends: libc, luci-app-ssr-plus
+Source: feeds/kenzok8/luci-app-ssr-plus
+SourceName: luci-i18n-ssr-plus-zh-cn
+Section: luci
+SourceDateEpoch: 1626236476
+Architecture: all
+Installed-Size: 5390
+Filename: luci-i18n-ssr-plus-zh-cn_git-21.195.15676-c119ac4_all.ipk
+Size: 6222
+SHA256sum: 499c4883b6bcbb39fdc48355138647a23fa66461deede6d47eb7ad77adf7ca8c
+Description:  Translation for luci-app-ssr-plus - 简体中文 (Chinese Simplified)
+
+Package: microsocks
+Version: 1.0.2-2
+Depends: libc
+Source: feeds/kenzok8/microsocks
+SourceName: microsocks
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1626236476
+Maintainer: lean
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5045
+Filename: microsocks_1.0.2-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5766
+SHA256sum: c2af4b24d3e2f1acec4ad7a1563be61ef62f02dbc2a1b859636d07f8659ffff4
+Description:  microsocks is a Tiny Proxy in C.
+
+Package: redsocks2
+Version: 0.67-4
+Depends: libc, libevent2-7, libopenssl1.1
+Source: feeds/kenzok8/redsocks2
+SourceName: redsocks2
+Section: net
+SourceDateEpoch: 1626236476
+Maintainer: semigodking <semigodking@gmail.com>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 52922
+Filename: redsocks2_0.67-4_arm_cortex-a15_neon-vfpv4.ipk
+Size: 53722
+SHA256sum: ef0a035e39655e3c873525bfe32c63db82b5520313f489811a13bef6287cb0fd
+Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
+
+Package: tcping
+Version: 0.3-1
+Depends: libc
+Source: feeds/kenzok8/tcping
+SourceName: tcping
+License: GPL-2.0-only
+Section: net
+SourceDateEpoch: 1626236476
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3292
+Filename: tcping_0.3-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4004
+SHA256sum: 7a543dc30c9b1e9347db4c4162e2fc6ee24da2c168c0963f068c739a6f69cfbb
+Description:  tcping measures the latency of a tcp-connection
+
