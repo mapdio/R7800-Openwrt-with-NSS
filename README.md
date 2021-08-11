@@ -9,7 +9,7 @@
 | 变量名 | 释义 |
 | :--- | :--- |
 | -- REPO_URL: https://github.com/ACwifidude/openwrt  | 定义源码 | 
-| -- REPO_BRANCH: kernel5.4-nss-qsdk10.0 | 定义分支 |
+| -- REPO_BRANCH: openwrt-21.02-nss-qsdk10.0 | 定义分支 |
 | -- DIY_P1_SH: diy-part1.sh | 定义脚本文件 feed update 前 |
 | -- DIY_P2_SH: diy-part2.sh | 定义脚本文件 feed install 后 |
 | -- SSH_ACTION: false |是否打开 SSH |
