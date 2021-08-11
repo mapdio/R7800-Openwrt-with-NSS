@@ -33,5 +33,5 @@
 网件R7800：[![GitHub release (latest by date)](https://img.shields.io/github/v/release/mapdio/R7800-Openwrt-with-NSS?style=for-the-badge&label=Download)](https://github.com/mapdio/R7800-Openwrt-with-NSS/releases/latest)
 
 ## 大雕LEAN的R21已经支持NSS，以下这个是 LDED的新固件下载
-网件R7800：[![GitHub release (latest by date)](https://img.shields.io/github/v/release/mapdio/R7800-LEAN-LEDE-NSS?style=for-the-badge&label=Download)](https://https://github.com/mapdio/R7800-LEAN-LEDE-NSS/releases/latest)
+网件R7800：[![GitHub release (latest by date)](https://img.shields.io/github/v/release/mapdio/R7800-LEAN-LEDE-NSS?style=for-the-badge&label=Download)](https://github.com/mapdio/R7800-LEAN-LEDE-NSS/releases/latest)
 
