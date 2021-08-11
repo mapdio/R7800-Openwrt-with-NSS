@@ -35,6 +35,9 @@ sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/dnsforwarder package/lean/dnsforwarder
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/dnsproxy package/lean/dnsproxy
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/lean/shortcut-fe
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic package/lean/UnblockNeteaseMusic
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic-Go package/lean/UnblockNeteaseMusic-Go
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/baidupcs-web package/lean/baidupcs-web
