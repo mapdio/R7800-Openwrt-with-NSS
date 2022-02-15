@@ -32,12 +32,12 @@ rm -rf bin
 # 添加 ssr plus 和passwall 支持源
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
-# sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.default
+sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.default
 
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
 svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/lean/dnsforwarder
-svn export https://github.com/coolsnowwolf/packages/trunk/net/lean/dnsproxy package/lean/dnsproxy
+svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/lean/dnsproxy
 # svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/lean/shortcut-fe
 svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/lean/UnblockNeteaseMusic
 svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/lean/UnblockNeteaseMusic-Go
