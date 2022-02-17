@@ -37,28 +37,28 @@ sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.def
 
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/feeds/lean/default-settings
-svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/feeds/lean/dnsforwarder
-svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/feeds/lean/dnsproxy
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/feeds/lean/dnsforwarder
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/feeds/lean/dnsproxy
 # svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/feeds/lean/shortcut-fe
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/feeds/lean/UnblockNeteaseMusic
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/feeds/lean/UnblockNeteaseMusic-Go
-svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web package/feeds/lean/baidupcs-web
+# # svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/feeds/lean/UnblockNeteaseMusic
+# svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/feeds/lean/UnblockNeteaseMusic-Go
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web package/feeds/lean/baidupcs-web
 
 
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-accesscontrol package/feeds/leanluci/luci-app-accesscontrol
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-arpbind package/feeds/leanluci/luci-app-arpbind
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-autoreboot package/feeds/leanluci/luci-app-autoreboot
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-baidupcs-web package/feeds/leanluci/luci-app-baidupcs-web
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-accesscontrol package/feeds/leanluci/luci-app-accesscontrol
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-arpbind package/feeds/leanluci/luci-app-arpbind
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-autoreboot package/feeds/leanluci/luci-app-autoreboot
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-baidupcs-web package/feeds/leanluci/luci-app-baidupcs-web
 # svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-cpufreq package/feeds/leanluci/luci-app-cpufreq
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-turboacc package/feeds/leanluci/luci-app-turboacc
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-unblockmusic package/feeds/leanluci/luci-app-unblockmusic
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-turboacc package/feeds/leanluci/luci-app-turboacc
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-unblockmusic package/feeds/leanluci/luci-app-unblockmusic
 
 # mv package/feeds/leanluci/luci-app-cpufreq/po/zh-cn  package/feeds/leanluci/luci-app-cpufreq/po/zh_Hans
-mv package/feeds/leanluci/luci-app-unblockmusic/po/zh-cn package/feeds/leanluci/luci-app-unblockmusic/po/zh_Hans
-mv package/feeds/leanluci/luci-app-turboacc/po/zh-cn package/feeds/leanluci/luci-app-turboacc/po/zh_Hans
-mv package/feeds/leanluci/luci-app-autoreboot/po/zh-cn package/feeds/leanluci/luci-app-autoreboot/po/zh_Hans
-mv package/feeds/leanluci/luci-app-arpbind/po/zh-cn package/feeds/leanluci/luci-app-arpbind/po/zh_Hans
-mv package/feeds/leanluci/luci-app-accesscontrol/po/zh-cn package/feeds/leanluci/luci-app-accesscontrol/po/zh_Hans
+# mv package/feeds/leanluci/luci-app-unblockmusic/po/zh-cn package/feeds/leanluci/luci-app-unblockmusic/po/zh_Hans
+# mv package/feeds/leanluci/luci-app-turboacc/po/zh-cn package/feeds/leanluci/luci-app-turboacc/po/zh_Hans
+# mv package/feeds/leanluci/luci-app-autoreboot/po/zh-cn package/feeds/leanluci/luci-app-autoreboot/po/zh_Hans
+# mv package/feeds/leanluci/luci-app-arpbind/po/zh-cn package/feeds/leanluci/luci-app-arpbind/po/zh_Hans
+# mv package/feeds/leanluci/luci-app-accesscontrol/po/zh-cn package/feeds/leanluci/luci-app-accesscontrol/po/zh_Hans
 
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
