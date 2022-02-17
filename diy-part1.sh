@@ -36,10 +36,10 @@ sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.def
 sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
 
 
-svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/feeds/lean/default-settings
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/feeds/lean/dnsforwarder
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/feeds/lean/dnsproxy
-# svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/feeds/lean/shortcut-fe
+# svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/lean/shortcut-fe
 # # svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/feeds/lean/UnblockNeteaseMusic
 # svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/feeds/lean/UnblockNeteaseMusic-Go
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web package/feeds/lean/baidupcs-web
