@@ -95,6 +95,8 @@ sed  -i '/^# builddir dependencies/a\$(curdir)/upx/compile := $(curdir)/ucl/comp
 # rm -rf package/feeds/lean/aria2
 # rm -rf package/feeds/lean/minidlna
 
+# rm -rf package/feeds/kenzok8/UnblockNeteaseMusic
+
 
 
 # 删除lede文件夹
