@@ -29,12 +29,17 @@ rm -rf bin
 # git clone -b master --single-branch https://github.com/LGA1150/openwrt-fullconenat package/fullconenat
 # wget -P target/linux/generic/hack-5.4 https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/generic/hack-5.4/952-net-conntrack-events-support-multiple-registrant.patch
 
+# Add SmartDNS
+git clone https://github.com/pymumu/openwrt-smartdns.git package/smartdns
+git clone https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+
+
 # 添加 ssr plus 和passwall 支持源
 sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.default
 sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
 
-sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
+# sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+# sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
