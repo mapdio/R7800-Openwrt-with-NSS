@@ -38,8 +38,8 @@ rm -rf bin
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
-git clone https://github.com/coolsnowwolf/packages package/leanpack/packages
-git clone https://github.com/coolsnowwolf/luci package/leanpack/luci
+git clone https://github.com/coolsnowwolf/packages leanpack/packages
+git clone https://github.com/coolsnowwolf/luci leanpack/luci
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/lean/dnsforwarder
