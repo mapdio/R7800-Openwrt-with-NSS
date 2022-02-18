@@ -32,29 +32,32 @@ rm -rf bin
 
 
 # 添加 ssr plus 和passwall 支持源
-sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.default
-sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
+# sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.default
+# sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
 
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
+git clone https://github.com/coolsnowwolf/packages package/leanpack/packages
+git clone https://github.com/coolsnowwolf/luci package/leanpack/luci
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
-svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/lean/dnsforwarder
-svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/lean/dnsproxy
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/lean/dnsforwarder
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/lean/dnsproxy
 # svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/packages/net/shortcut-fe
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/lean/UnblockNeteaseMusic
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/lean//UnblockNeteaseMusic-Go
-svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web package/lean/baidupcs-web
+
+# svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic feeds/lean/multimedia/UnblockNeteaseMusic
+# svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go feeds/lean/multimedia/UnblockNeteaseMusic-Go
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web feeds/lean/net/baidupcs-web
 
 
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-accesscontrol package/lean/luci-app-accesscontrol
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-arpbind package/lean/luci-app-arpbind
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-autoreboot package/lean/luci-app-autoreboot
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-baidupcs-web package/lean/luci-app-baidupcs-web
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-accesscontrol package/lean/luci-app-accesscontrol
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-arpbind package/lean/luci-app-arpbind
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-autoreboot package/lean/luci-app-autoreboot
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-baidupcs-web package/lean/luci-app-baidupcs-web
 # svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-cpufreq package/lean/luci-app-cpufreq
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-turboacc package/lean/luci-app-turboacc
-svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-unblockmusic package/lean/luci-app-unblockmusic
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-turboacc package/lean/luci-app-turboacc
+# svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-unblockmusic package/lean/luci-app-unblockmusic
 
 # mv package/feeds/leanluci/luci-app-cpufreq/po/zh-cn  package/feeds/leanluci/luci-app-cpufreq/po/zh_Hans
 # mv package/feeds/leanluci/luci-app-unblockmusic/po/zh-cn package/feeds/leanluci/luci-app-unblockmusic/po/zh_Hans
