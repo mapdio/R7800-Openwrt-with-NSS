@@ -30,8 +30,8 @@ rm -rf bin
 # wget -P target/linux/generic/hack-5.4 https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/generic/hack-5.4/952-net-conntrack-events-support-multiple-registrant.patch
 
 # Add SmartDNS
-git clone https://github.com/pymumu/openwrt-smartdns.git feeds/packages/net/smartdns
-git clone https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
+git clone https://github.com/pymumu/openwrt-smartdns.git ./feeds/packages/net/smartdns
+git clone https://github.com/pymumu/luci-app-smartdns.git ./feeds/luci/applications/luci-app-smartdns
 
 
 # 添加 ssr plus 和passwall 支持源
