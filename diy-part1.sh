@@ -39,13 +39,13 @@ sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.def
 # sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
 
-svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/feeds/lean/default-settings
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/feeds/packages/net/dnsforwarder
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/feeds/packages/net/dnsproxy
 # svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/packages/net/shortcut-fe
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic feeds/packages/multimedia/UnblockNeteaseMusic
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go feeds/packages/multimedia/UnblockNeteaseMusic-Go
-svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web feeds/packages/net/baidupcs-web
+# svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic feeds/packages/multimedia/UnblockNeteaseMusic
+# svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go feeds/packages/multimedia/UnblockNeteaseMusic-Go
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web feeds/packages/net/baidupcs-web
 
 
 # svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-accesscontrol package/feeds/leanluci/luci-app-accesscontrol
