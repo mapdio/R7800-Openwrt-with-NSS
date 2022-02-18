@@ -30,8 +30,8 @@ rm -rf bin
 # wget -P target/linux/generic/hack-5.4 https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/generic/hack-5.4/952-net-conntrack-events-support-multiple-registrant.patch
 
 # Add SmartDNS
-git clone https://github.com/pymumu/openwrt-smartdns.git package/smartdns
-git clone https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone https://github.com/pymumu/openwrt-smartdns.git feeds/packages/net/smartdns
+git clone https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 
 
 # 添加 ssr plus 和passwall 支持源
@@ -43,12 +43,12 @@ sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.def
 
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/feeds/lean/default-settings
-# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/feeds/lean/dnsforwarder
-# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/feeds/lean/dnsproxy
-# svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/lean/shortcut-fe
-# # svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/feeds/lean/UnblockNeteaseMusic
-# svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/feeds/lean/UnblockNeteaseMusic-Go
-# svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web package/feeds/lean/baidupcs-web
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/feeds/packages/net/dnsforwarder
+# svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/feeds/packages/net/dnsproxy
+# svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/packages/net/shortcut-fe
+svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/feeds/packages/net/UnblockNeteaseMusic
+svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/feeds/packages/net/UnblockNeteaseMusic-Go
+svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web package/feeds/packages/net/baidupcs-web
 
 
 # svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-accesscontrol package/feeds/leanluci/luci-app-accesscontrol
