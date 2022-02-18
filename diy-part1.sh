@@ -29,9 +29,6 @@ rm -rf bin
 # git clone -b master --single-branch https://github.com/LGA1150/openwrt-fullconenat package/fullconenat
 # wget -P target/linux/generic/hack-5.4 https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/generic/hack-5.4/952-net-conntrack-events-support-multiple-registrant.patch
 
-# Add SmartDNS
-git clone https://github.com/pymumu/openwrt-smartdns.git ./feeds/packages/net/smartdns
-git clone https://github.com/pymumu/luci-app-smartdns.git ./feeds/luci/applications/luci-app-smartdns
 
 
 # 添加 ssr plus 和passwall 支持源
@@ -46,9 +43,9 @@ svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-setti
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/feeds/packages/net/dnsforwarder
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsproxy package/feeds/packages/net/dnsproxy
 # svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/packages/net/shortcut-fe
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic package/feeds/packages/net/UnblockNeteaseMusic
-svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go package/feeds/packages/net/UnblockNeteaseMusic-Go
-svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web package/feeds/packages/net/baidupcs-web
+svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic feeds/packages/multimedia/UnblockNeteaseMusic
+svn export https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go feeds/packages/multimedia/UnblockNeteaseMusic-Go
+svn export https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web feeds/packages/net/baidupcs-web
 
 
 # svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-accesscontrol package/feeds/leanluci/luci-app-accesscontrol
