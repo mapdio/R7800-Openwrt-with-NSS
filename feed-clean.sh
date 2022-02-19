@@ -4,6 +4,7 @@
 
 cp -rf feeds/leanpack/* feeds/packages/
 rm -rf feeds/leanpack
+./scripts/feeds update -a
 
 # 移除feed里重复组件
 
