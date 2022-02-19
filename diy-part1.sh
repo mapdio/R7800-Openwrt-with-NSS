@@ -36,6 +36,9 @@ rm -rf bin
 sed -i '$a src-git leanpack https://github.com/coolsnowwolf/packages' feeds.conf.default
 sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
 
+cp -rf feeds/leanpack/* feeds/packages/
+rm -rf feeds/leanpack
+
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
