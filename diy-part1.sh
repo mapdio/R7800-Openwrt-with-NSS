@@ -32,14 +32,15 @@ rm -rf bin
 
 
 # 添加 ssr plus 和passwall 支持源
-# sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.default
-# sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
+
+sed -i '$a src-git lean https://github.com/coolsnowwolf/packages' feeds.conf.default
+sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
 
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
-git clone https://github.com/coolsnowwolf/packages leanpack/packages
-git clone https://github.com/coolsnowwolf/luci leanpack/luci
+# git clone https://github.com/coolsnowwolf/packages leanpack/packages
+# git clone https://github.com/coolsnowwolf/luci leanpack/luci
 
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
 # svn export https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder package/lean/dnsforwarder
