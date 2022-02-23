@@ -33,13 +33,11 @@ rm -rf bin
 
 # 添加 ssr plus 和passwall 支持源
 
-git clone https://github.com/coolsnowwolf/packages feeds/leanpack
+# git clone https://github.com/coolsnowwolf/packages feeds/leanpack
 sed -i '$a src-git leanluci https://github.com/coolsnowwolf/luci' feeds.conf.default
 
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
-
-svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
 
 
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
