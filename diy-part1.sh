@@ -42,7 +42,7 @@ sed -i '$a src-git small  https://github.com/kenzok8/small' feeds.conf.default
 
 # sed -i '$a src-git OpenAppFilter https://github.com/OpenWrt-Actions/OpenAppFilter' feeds.conf.default
 
-
+svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings
 
 # 添加UPX UCL工具包
 # cp -r lede/tools/upx tools
