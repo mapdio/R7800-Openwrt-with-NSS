@@ -1,0 +1,60 @@
+Package: lua-neturl
+Version: 1.1-1-1
+Depends: libc, lua
+License: MIT
+Section: lang
+Architecture: all
+Installed-Size: 4538
+Filename: lua-neturl_1.1-1-1_all.ipk
+Size: 5342
+SHA256sum: 008e7e8854f10f9faad4ea7f3378241cae7fe89501437fad0d65f14ccfb74ed7
+Description:  This small Lua library provides a few functions to parse URL with
+ querystring and build new URL easily.
+
+Package: luci-app-ssr-plus
+Version: 186
+Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, chinadns-ng, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, simple-obfs
+Section: luci
+Architecture: all
+Installed-Size: 198078
+Filename: luci-app-ssr-plus_186_all.ipk
+Size: 198311
+SHA256sum: d111cd463898f7d1a170dd7ad8419d04c5c37386af648d6645a8d0b0982685f0
+Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
+
+Package: luci-i18n-ssr-plus-zh-cn
+Version: git-22.355.44105-fb44f90
+Depends: libc, luci-app-ssr-plus
+Section: luci
+Architecture: all
+Installed-Size: 6086
+Filename: luci-i18n-ssr-plus-zh-cn_git-22.355.44105-fb44f90_all.ipk
+Size: 6927
+SHA256sum: 6a97903199ceb43dbe896386ad60af30fa3bd844fcc9a6d98377ad66c6c6b86b
+Description:  Translation for luci-app-ssr-plus - 简体中文 (Chinese Simplified)
+
+Package: microsocks
+Version: 1.0.3-1
+Depends: libc, libpthread
+License: MIT
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 5173
+Filename: microsocks_1.0.3-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 5977
+SHA256sum: 74977d98600a24806dce292eef156f26e64ca0dff10f987613dfb193a4d24efa
+Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
+ through them, if for some reason SSH doesn't cut it for you.
+
+Package: tcping
+Version: 0.3-1
+Depends: libc
+License: GPL-2.0-only
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3367
+Filename: tcping_0.3-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 4086
+SHA256sum: 253540ca16f4fb689132c39d89930cbc48e0fb291e385085f49954ff3fb2fbe2
+Description:  tcping measures the latency of a tcp-connection
+

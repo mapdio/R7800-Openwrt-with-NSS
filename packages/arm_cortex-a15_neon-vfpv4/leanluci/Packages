@@ -1,0 +1,56 @@
+Package: luci-app-accesscontrol
+Version: 1-11
+Depends: libc
+Section: luci
+Architecture: all
+Installed-Size: 2743
+Filename: luci-app-accesscontrol_1-11_all.ipk
+Size: 3550
+SHA256sum: 4cd9aa386fbbc6617954be8b92e0b45da77c475f5df2d8c64c5026feb500a54b
+Description:  LuCI Access Control Configuration
+
+Package: luci-app-arpbind
+Version: 1-3
+Depends: libc, ip
+Section: luci
+Architecture: all
+Installed-Size: 1844
+Filename: luci-app-arpbind_1-3_all.ipk
+Size: 2609
+SHA256sum: 5a6dbb784175e47ccfc88265170e4d1b5e97fffd9f38281e1d8125f468032b3a
+Description:  ARP Binding
+
+Package: luci-app-autoreboot
+Version: 1.0-8
+Depends: libc, luci
+Section: luci
+Architecture: all
+Installed-Size: 1287
+Filename: luci-app-autoreboot_1.0-8_all.ipk
+Size: 2008
+SHA256sum: 34d77ea8b617c71e4a18147c0201967a688dc16a93b3ac82cfbae2b0ad297f8b
+Description:  LuCI support for Scheduled Reboot
+
+Package: luci-app-baidupcs-web
+Version: 1.0-5
+Depends: libc, baidupcs-web, wget, openssl-util
+Section: luci
+Architecture: all
+Installed-Size: 2554
+Filename: luci-app-baidupcs-web_1.0-5_all.ipk
+Size: 3406
+SHA256sum: 0467bdbf2684eb9c30208b762b355b926e2d00ff9ef5d9e7f6b0660581cfd99e
+Description:  LuCI support for BaiduPCS-Go
+
+Package: luci-app-unblockmusic
+Version: 2.3.5-21
+Depends: libc, dnsmasq-full, ipset, uclient-fetch, UnblockNeteaseMusic-Go
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 7245
+Filename: luci-app-unblockmusic_2.3.5-21_all.ipk
+Size: 8178
+SHA256sum: 9e778ef619683eed8933595e2d5f13ebfe5478411bfff7c961f624b27ca3fd92
+Description:  LuCI support for Unblock NeteaseCloudMusic
+

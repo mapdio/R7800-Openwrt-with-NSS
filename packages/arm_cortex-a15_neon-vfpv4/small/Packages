@@ -1,0 +1,62 @@
+Package: chinadns-ng
+Version: 1.0-beta.25-1
+Depends: libc, ipset
+License: AGPL-3.0-only
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 16880
+Filename: chinadns-ng_1.0-beta.25-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 17717
+SHA256sum: c0cc76d2ad5a3ba5bc9fe81f467f024d3655bb7957b05e687814b5652c1e3ede
+Description:  ChinaDNS next generation, refactoring with epoll and ipset.
+
+Package: dns2socks
+Version: 2.1-2
+Depends: libc, libpthread
+License: BSD-3-Clause
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 10769
+Filename: dns2socks_2.1-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 11544
+SHA256sum: bc0a8c81917b5373a5f4dde435a8a72a9fcf4a19e6d9da4804d025533f7798cf
+Description:  This is a command line utility to resolve DNS requests via
+ a SOCKS tunnel like Tor or a HTTP proxy.
+
+Package: dns2tcp
+Version: 1.1.0-1
+Depends: libc
+License: AGPL-3.0-only
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 11375
+Filename: dns2tcp_1.1.0-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 12198
+SHA256sum: 5e2726b12aa9215ba9218cce197778dfabcb8c09f3cd9095a99c6b928ff60d77
+Description:  utility to convert dns query from udp to tcp
+
+Package: shadowsocksr-libev-ssr-check
+Version: 2.5.6-9
+Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+License: GPL-3.0
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2264
+Filename: shadowsocksr-libev-ssr-check_2.5.6-9_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3046
+SHA256sum: 1db42b0cbfd76e6190bb3050e40b4ac111504860b917dbbd9d36a507633f86a1
+Description:  shadowsocksr-libev ssr-check
+
+Package: simple-obfs-client
+Version: 0.0.5-1
+Depends: libc, libpthread, libev
+Provides: simple-obfs
+License: GPL-3.0-or-later
+Section: net
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 27249
+Filename: simple-obfs-client_0.0.5-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 28127
+SHA256sum: 6dca02608bc88ab366d38dde243dc1bc91d547137ad18941b519bb992f0dc343
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
